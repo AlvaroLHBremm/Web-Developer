@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="my_script.js" defer></script>
+	</head>
+	<body>
+		<div id="calculatorBody">
+			<input type="text" placeholder="0" readonly id="display">
+			<div id="keyBoard">
+				<button type="button" onclick="KeyboardInput('action', 'c')" class="span-column">Clear</button>
+				<button type="button" onclick="KeyboardInput('action', '/')">/</button>
+				<button type="button" onclick="KeyboardInput('action', 'x')">x</button>
+
+				<button type="button" onclick="KeyboardInput('value', 7)">7</button>
+				<button type="button" onclick="KeyboardInput('value', 8)">8</button>
+				<button type="button" onclick="KeyboardInput('value', 9)">9</button>
+				<button type="button" onclick="KeyboardInput('action', '-')">-</button>
+
+				<button type="button" onclick="KeyboardInput('value', 4)">4</button>
+				<button type="button" onclick="KeyboardInput('value', 5)">5</button>
+				<button type="button" onclick="KeyboardInput('value', 6)">6</button>
+				<button type="button" onclick="KeyboardInput('action', '+')">+</button>
+
+				<button type="button" onclick="KeyboardInput('value', 1)">1</button>
+				<button type="button" onclick="KeyboardInput('value', 2)">2</button>
+				<button type="button" onclick="KeyboardInput('value', 3)">3</button>
+				<button type="button" onclick="KeyboardInput('action', '=')" class="span-row">=</button>
+
+				<button type="button" onclick="KeyboardInput('value', 0)" class="span-column">0</button>
+				<button type="button" onclick="KeyboardInput('action', '.')">.</button>
+			</div>
+		</div>
+	</body>
+</html>
+
+
